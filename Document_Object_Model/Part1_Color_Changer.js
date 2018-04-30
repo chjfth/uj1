@@ -34,4 +34,5 @@ function changeHeaderColor(){
 }
 
 // Now perform the action over intervals (milliseocnds):
-setInterval("changeHeaderColor()",500);
+var timer1 = setInterval("changeHeaderColor()",500);
+// Chj: Use clearInterval(timer1) to cancel this timer.
