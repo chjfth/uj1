@@ -10,10 +10,16 @@ function clearBoard() {
   for (var i = 0; i < squares.length; i++) {
       squares[i].textContent = '';
   }
-
 }
-restart.addEventListener('click',clearBoard)
 
+function clearBoard2() {
+	// alternat method: verified
+	for (var td of squares) {
+		td.textContent = '-'
+	}
+}
+
+restart.addEventListener('click',clearBoard)
 
 
 
